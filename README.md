@@ -6,16 +6,18 @@ This document describes a storage format for VEVENTS, VTODOs and VCARDs, with th
 Basic Folder Structure
 ----------------------
 
-Similarly to CalDAV and CardDAV, the main folder (root) contains an arbitrary number of subfolders (collections), which contain only files (items).
+The main folder (root) contains an arbitrary number of subfolders (collections), which contain only files (items).
 
 Synonyms for "collection" may be "addressbook" or "calendar".
 
 An item is:
 
   - A VCARD file, in which case the file extension must be `.vcf`, *or*
-  - A VCALENDAR file containing exactly one VEVENT or VTODO component, in which case the file extension must be `.ics`.
+  - A VCALENDAR file containing exactly one VEVENT or VTODO component (and, optionally, a VTIMEZONE component), in which case the file extension must be `.ics`.
 
 An item's name contains the UID of the VTODO, VEVENT or VCARD component inside the file, followed by the mentioned file extension.
+
+This is basically very similar to CalDAV and CardDAV.
 
 Implementation ideas
 --------------------

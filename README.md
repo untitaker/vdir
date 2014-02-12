@@ -27,3 +27,7 @@ Similarly to the popular combination of offlineimap, mutt and notmuch, a toolcha
   - A syncronization tool
   - A CLI-program which lets the user modify the data directly
   - An indexing or caching tool to allow for faster search than is possible with a linear scan through all items
+
+### Syncronization
+
+See http://blog.ezyang.com/2012/08/how-offlineimap-works/ for a good solution for *immutable* items.

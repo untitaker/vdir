@@ -30,4 +30,6 @@ Similarly to the popular combination of offlineimap, mutt and notmuch, a toolcha
 
 ### Syncronization
 
-See http://blog.ezyang.com/2012/08/how-offlineimap-works/ for a good solution for *immutable* items.
+See http://blog.ezyang.com/2012/08/how-offlineimap-works/ for a good solution for *immutable* items. The syncronization tool can use the algorithm described to handle new and deleted items, and then run a *second* algorithm that can be roughly described with this Venn-Diagram:
+
+![img](http://i.imgur.com/YbjYMth.png)

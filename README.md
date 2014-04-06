@@ -24,25 +24,8 @@ contain only the VCARD's, VEVENT's or VTODO's UID and the file extension.
 
 This is basically very similar to CalDAV and CardDAV.
 
-Implementation ideas
---------------------
+Implementation
+--------------
 
-Similarly to the popular combination of offlineimap, mutt and notmuch, a
-toolchain to manage, modify and display VDIRs could consist of three programs
-working independently from each other:
-
-  - A syncronization tool
-  - A CLI-program which lets the user modify the data directly
-  - An indexing or caching tool to allow for faster search than is possible
-    with a linear scan through all items
-
-### Syncronization
-
-See http://blog.ezyang.com/2012/08/how-offlineimap-works/ for a good solution
-for *immutable* items.
-    
-The syncronization tool can use the algorithm described to handle new and
-deleted items, and then run a *second* algorithm that can be roughly described
-with this Venn-Diagram:
-
-![img](http://i.imgur.com/YbjYMth.png)
+[vdirsyncer](https://github.com/untitaker/vdirsyncer) is the reference
+implementation.
